@@ -1,0 +1,18 @@
+﻿@model List<ImageUploader.Data.Model.ImageGallery>
+@{
+    ViewBag.Title = "Your Uploaded Images";
+}
+
+<h2>Your Uploaded Images</h2>
+
+
+<div class="container">
+    <div class="row">
+        @foreach (var x in Model)
+        {
+            <div class="col-sm-4" id="images">
+                <img src="/Home/GetImage/@x.ID" class="img-responsive" alt="" />
+            </div>
+        }
+    </div>
+</div>

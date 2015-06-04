@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Upload Images</h2>
+
+@using (Html.BeginForm("Create", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <p>Please click "Choose File" to pick your image</p>
+    <input type="file" name="ImageData" id="ImageData" onchange="fileCheck(this);" />
+    <br />
+    <input type="submit" value="Upload File" />
+}
