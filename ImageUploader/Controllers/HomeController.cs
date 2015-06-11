@@ -32,6 +32,11 @@ namespace ImageUploader.Controllers
                 return View();
 
             }
+        public ActionResult About()
+            {
+                return View();
+            }
+
 
             [Authorize]
             // GET: Member
